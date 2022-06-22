@@ -4,18 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Default Parameter</title>
+    <title>Rest Parameter</title>
 </head>
 <body>
     <script>
-        // function add(a,b,c=50){
-        //     document.write("A="+a+"<br>"+"B="+b+"<br>"+"C="+c);
-
-        // }
-        function add(a,b,c=null){
-            document.write("A:"+a+"B:"+b+"C:"+c);
+        function restparameter(...args){
+            document.write(args);
         }
-        add(10,5);
+        restparameter(10,20,30,50,80,70,564,52);
     </script>
 </body>
 </html>
