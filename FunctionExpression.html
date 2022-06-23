@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Expression</title>
+</head>
+<body>
+    <script>
+        //Function declearation
+        dis(); //call before function declearation 
+        function dis(){
+            var a="amritkumar";
+            document.write(a+"<br>");
+        }
+        dis();
+        // Function Expression 
+        //myFun(); can't be call before function expression 
+        var myFun=function dis(){
+            var a="amritkumar";
+            document.write(a);
+        }
+        myFun();
+    </script>
+</body>
+</html>

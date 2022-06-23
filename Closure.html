@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body>
+    <script>
+        var i=10;
+        function Outerfunction(){
+            var j="j a Local variable of outer funtion.";
+            document.write(j+"<br>");
+                function innerFunction(){
+                    var k="K a Local variable of Inner function.";
+                    document.write(k+"<br>");
+                    document.write(j+"<br>");//Closure function
+                }
+
+                innerFunction();
+                document.write(k+"<br>");//innerfunction can't access outerfunction.
+        }
+        Outerfunction();
+    </script>
+</body>
+</html>
